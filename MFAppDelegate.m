@@ -9,118 +9,12 @@
 
 @implementation MFAppDelegate
 -(void)applicationDidBecomeActive:(UIApplication *)application{
-    /*system("cp -r '/private/var/mobile/Library/Preferences/.GlobalPreferences.plist' '//private/var/root/Library/Preferences/.GlobalPreferences.plist'");
-    NSString *locale = [[NSLocale currentLocale] localeIdentifier];
-    if ([locale rangeOfString:@"es"].location !=NSNotFound){
-        system("cp -r '/var/stash/Applications.pwn/iFinder.app/es.lproj/Localizable.strings' '/var/stash/Applications.pwn/iFinder.app/en.lproj/'");
-    } else if ([locale rangeOfString:@"en"].location !=NSNotFound){
-        system("cp -r '/var/stash/Applications.pwn/iFinder.app/en-US.lproj/Localizable.strings' '/var/stash/Applications.pwn/iFinder.app/en.lproj/'");
-    } else {
-        system("cp -r '/var/stash/Applications.pwn/iFinder.app/en-US.lproj/Localizable.strings' '/var/stash/Applications.pwn/iFinder.app/en.lproj/'");
-    }*/
-    /*NSString *finalPath = @"/private/var/mobile/Library/Preferences/.GlobalPreferences.plist";
-    dictionary = [NSDictionary dictionaryWithContentsOfFile:finalPath];
-    NSString *locale = [[dictionary objectForKey:@"AppleLanguages"] objectAtIndex:0];
-    if ([locale rangeOfString:@"es"].location !=NSNotFound){
-        system("cp -r '/var/stash/Applications.pwn/iFinder.app/es.lproj/Localizable.strings' '/var/stash/Applications.pwn/iFinder.app/en.lproj/'");
-    } else if ([locale rangeOfString:@"en"].location !=NSNotFound){
-        system("cp -r '/var/stash/Applications.pwn/iFinder.app/en-US.lproj/Localizable.strings' '/var/stash/Applications.pwn/iFinder.app/en.lproj/'");
-    } else if ([locale rangeOfString:@"he"].location !=NSNotFound){
-        system("cp -r '/var/stash/Applications.pwn/iFinder.app/he.lproj/Localizable.strings' '/var/stash/Applications.pwn/iFinder.app/en.lproj/'");
-    } else if ([locale rangeOfString:@"de"].location !=NSNotFound){
-        system("cp -r '/var/stash/Applications.pwn/iFinder.app/de.lproj/Localizable.strings' '/var/stash/Applications.pwn/iFinder.app/en.lproj/'");
-    } else if ([locale rangeOfString:@"ko"].location !=NSNotFound){
-        system("cp -r '/var/stash/Applications.pwn/iFinder.app/ko.lproj/Localizable.strings' '/var/stash/Applications.pwn/iFinder.app/en.lproj/'");
-    } else {
-        system("cp -r '/var/stash/Applications.pwn/iFinder.app/en-US.lproj/Localizable.strings' '/var/stash/Applications.pwn/iFinder.app/en.lproj/'");
-    }*/
-    
-    /*NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    NSString *validating = [prefs stringForKey:@"MFValidated"];
-    UIDevice *myDevice = [UIDevice currentDevice];
-	NSString *deviceUDID = [myDevice uniqueIdentifier];
-    NSString *quinto = [deviceUDID substringToIndex:[deviceUDID length]-39];
-    NSString *once = [deviceUDID substringWithRange:NSMakeRange(10, 1)];
-    NSString *diez = [deviceUDID substringWithRange:NSMakeRange(25, 1)];
-    NSString *uhuh = [deviceUDID substringWithRange:NSMakeRange(11, 7)];
-    NSString *uji = [deviceUDID substringWithRange:NSMakeRange(1, 30)];
-    NSString *ulio = [deviceUDID substringWithRange:NSMakeRange(35, 2)];
-    NSString *acue = [deviceUDID substringWithRange:NSMakeRange(9, 19)];
-    NSString *check = [NSString stringWithFormat:@"%@A%@U%@8%@faiaso%@28ds%@vayq%@%@",quinto,deviceUDID,once,diez, uhuh, uji, ulio, acue];
-    if ([check isEqualToString:validating]) {
-	} else {
-        loadingView = [[MFLoadingView alloc] initWithType: MFLoadingViewTypeValidating];
-        [loadingView show];
-        NSMutableURLRequest *request = [[[NSMutableURLRequest alloc] init] autorelease];
-        NSString *sabelo = [NSString stringWithFormat:@"http://smsancel.host22.com/check.php?UDID=%@",deviceUDID];
-        [request setURL:[NSURL URLWithString:sabelo]];
-        NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:NULL error:NULL];
-        NSString *html = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];              
-        NSScanner *scanner = [NSScanner scannerWithString:html];
-        NSString *token = nil;
-        [scanner scanString:@"<RESPONSE>" intoString:NULL];
-        [scanner scanUpToString:@"</RESPONSE>" intoString:&token];
-        NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-        if ([token isEqualToString:@"success"]){
-            [prefs setObject:check forKey:@"MFValidated"];
-            [prefs synchronize];
-            [loadingView hide];
-            UIAlertView *alert2 = [[UIAlertView alloc]
-                                   initWithTitle:@"App Validated!!"
-                                   message:@"Thanks for buying iFinder"
-                                   delegate:nil
-                                   cancelButtonTitle:nil
-                                   otherButtonTitles:@"OK", nil];
-            [alert2 show];
-            [alert2 release];
-        } else {
-            [loadingView hide];
-            UIAlertView *alert2 = [[UIAlertView alloc]
-                                   initWithTitle:@"iFinder!!"
-                                   message:@"iFinder could not be validated, please purchase it from Cydia Store. If you think that this is a mistake, please contact developer."
-                                   delegate:nil
-                                   cancelButtonTitle:@"OK",
-                                   otherButtonTitles:nil];
-            alert2.tag = 7;
-            [alert2 show];
-            [alert2 release];
-        }
-        
-    }*/
+
 }
 
 // UIApplicationDelegate
 - (BOOL) application: (UIApplication *) application didFinishLaunchingWithOptions: (NSDictionary *) options {    
-    //system("cp -r '/private/var/mobile/Library/Preferences/.GlobalPreferences.plist' '//private/var/root/Library/Preferences/.GlobalPreferences.plist'");
-    //[[NSUserDefaults standardUserDefaults] stringForKey: @"AppleLocale"];
-    //NSString *locale = [[NSLocale currentLocale] localeIdentifier];
-    /*NSString *finalPath = @"/private/var/mobile/Library/Preferences/.GlobalPreferences.plist";
-    dictionary = [NSDictionary dictionaryWithContentsOfFile:finalPath];
-    //NSString *locale = [[[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"] objectAtIndex:0];
-    NSString *locale = [[dictionary objectForKey:@"AppleLanguages"] objectAtIndex:0];
-    if ([locale rangeOfString:@"es"].location !=NSNotFound){
-        system("cp -r '/var/stash/Applications.pwn/iFinder.app/es.lproj/Localizable.strings' '/var/stash/Applications.pwn/iFinder.app/en.lproj/'");
-    } else if ([locale rangeOfString:@"en"].location !=NSNotFound){
-        system("cp -r '/var/stash/Applications.pwn/iFinder.app/en-US.lproj/Localizable.strings' '/var/stash/Applications.pwn/iFinder.app/en.lproj/'");
-    } else if ([locale rangeOfString:@"he"].location !=NSNotFound){
-        system("cp -r '/var/stash/Applications.pwn/iFinder.app/he.lproj/Localizable.strings' '/var/stash/Applications.pwn/iFinder.app/en.lproj/'");
-    } else if ([locale rangeOfString:@"de"].location !=NSNotFound){
-        system("cp -r '/var/stash/Applications.pwn/iFinder.app/de.lproj/Localizable.strings' '/var/stash/Applications.pwn/iFinder.app/en.lproj/'");
-    } else if ([locale rangeOfString:@"ko"].location !=NSNotFound){
-        system("cp -r '/var/stash/Applications.pwn/iFinder.app/ko.lproj/Localizable.strings' '/var/stash/Applications.pwn/iFinder.app/en.lproj/'");
-    } else {
-        system("cp -r '/var/stash/Applications.pwn/iFinder.app/en-US.lproj/Localizable.strings' '/var/stash/Applications.pwn/iFinder.app/en.lproj/'");
-    }*/
-    
-    
-    /*system("dpkg --get-selections > /a");
-    NSString *a = [NSString stringWithContentsOfFile:@"/a" encoding: NSUTF8StringEncoding error: NULL];
-    if ([a rangeOfString:@"org.thebigboss.ifinder"].location == NSNotFound){
-        system("rm -rf /a");
-        [[UIApplication sharedApplication] terminate];
-    } else{ 
-        system("rm -rf /a");
-    }*/
+
     mainWindow = [[UIWindow alloc] initWithFrame: CGRectMake(0, 0, 320, 480)];
 	[mainWindow makeKeyAndVisible];
 
@@ -177,59 +71,6 @@
     }
 
     [UIPasteboard pasteboardWithName: @"MFPasteboard" create: YES];
-   
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    NSString *validating = [prefs stringForKey:@"MFValidated"];
-    UIDevice *myDevice = [UIDevice currentDevice];
-	NSString *deviceUDID = [myDevice uniqueIdentifier];
-    NSString *quinto = [deviceUDID substringToIndex:[deviceUDID length]-39];
-    NSString *once = [deviceUDID substringWithRange:NSMakeRange(10, 1)];
-    NSString *diez = [deviceUDID substringWithRange:NSMakeRange(25, 1)];
-    NSString *uhuh = [deviceUDID substringWithRange:NSMakeRange(11, 7)];
-    NSString *uji = [deviceUDID substringWithRange:NSMakeRange(1, 30)];
-    NSString *ulio = [deviceUDID substringWithRange:NSMakeRange(35, 2)];
-    NSString *acue = [deviceUDID substringWithRange:NSMakeRange(9, 19)];
-    NSString *check = [NSString stringWithFormat:@"%@A%@U%@8%@faiaso%@28ds%@vayq%@%@",quinto,deviceUDID,once,diez, uhuh, uji, ulio, acue];
-    if ([check isEqualToString:validating]) {
-	} else {
-        loadingView = [[MFLoadingView alloc] initWithType: MFLoadingViewTypeValidating];
-        [loadingView show];
-        NSMutableURLRequest *request = [[[NSMutableURLRequest alloc] init] autorelease];
-        NSString *sabelo = [NSString stringWithFormat:@"http://ifinder.itaysoft.com/verification.php?UDID=%@",deviceUDID];
-        [request setURL:[NSURL URLWithString:sabelo]];
-        NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:NULL error:NULL];
-        NSString *html = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];              
-        NSScanner *scanner = [NSScanner scannerWithString:html];
-        NSString *token = nil;
-        [scanner scanString:@"<RESPONSE>" intoString:NULL];
-        [scanner scanUpToString:@"</RESPONSE>" intoString:&token];
-        NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-        if ([token isEqualToString:@"success"]){
-            [prefs setObject:check forKey:@"MFValidated"];
-            [prefs synchronize];
-            [loadingView hide];
-            UIAlertView *alert2 = [[UIAlertView alloc]
-                                   initWithTitle:NSLocalizedString(@"App Validated!!", @"App Validated!!")
-                                   message:NSLocalizedString(@"Thanks for buying iFinder", @"Thanks for buying iFinder")
-                                   delegate:self
-                                   cancelButtonTitle:@"OK"
-                                   otherButtonTitles:nil];
-            [alert2 show];
-            [alert2 release];
-        } else {
-            [loadingView hide];
-            UIAlertView *alert2 = [[UIAlertView alloc]
-                                   initWithTitle:NSLocalizedString(@"iFinder!!", @"iFinder!!")
-                                   message:NSLocalizedString(@"iFinder could not be validated, please purchase it from Cydia Store. If you think that this is a mistake, please contact developer.", @"iFinder could not be validated, please purchase it from Cydia Store. If you think that this is a mistake, please contact developer.")
-                                   delegate:self
-                                   cancelButtonTitle:@"OK"
-                                   otherButtonTitles:nil];
-            alert2.tag = 7;
-            [alert2 show];
-            [alert2 release];
-        }
-
-    }
 
     //Dropbox Upload Path
     //NSString *upload = @"/Public/iFinder";
@@ -305,12 +146,8 @@
 }
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
-//	NSLocale* curentLocale = [NSLocale currentLocale];
-    //BOOL retVal;
-	//if ([[url scheme] isEqualToString: @"ifinder"] || [[url scheme] isEqualToString: @"if"]) {
         if (!url) {  return NO; }
 		MFFile *file = [[MFFile alloc] init];
-		//[[NSFileManager defaultManager] moveItemAtPath: [url path] toPath: [@"/private/var/mobile/Documents" stringByAppendingPathComponent: [[url path] lastPathComponent]] error: NULL];
         char *cmd = [[NSString stringWithFormat:@"cp -r '%@' '/private/var/mobile/Documents'", [url path]] UTF8String];
         system(cmd);
 		file.path = @"/private/var/mobile/Documents";
@@ -323,11 +160,6 @@
 		[fileViewerController presentFrom: [[NSUserDefaults standardUserDefaults] boolForKey: @"MFPasswordEnabled"] ? passwordController : mainController];
     seteuid(0);
         return YES;
-		//retVal = YES;
-		
-	//}
-	
-//	return retVal;
     
 }
 
