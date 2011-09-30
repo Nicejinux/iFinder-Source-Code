@@ -144,8 +144,6 @@
 		F493A82E13A3F8F10068C984 /* MFSQLTablesController.m in Sources */ = {isa = PBXBuildFile; fileRef = F493A7D313A3F8F10068C984 /* MFSQLTablesController.m */; };
 		F493A82F13A3F8F10068C984 /* MFSQLViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = F493A7D513A3F8F10068C984 /* MFSQLViewer.m */; };
 		F493A83013A3F8F10068C984 /* MFThread.m in Sources */ = {isa = PBXBuildFile; fileRef = F493A7D713A3F8F10068C984 /* MFThread.m */; };
-		F493A83113A3F8F10068C984 /* mongoose.c in Sources */ = {isa = PBXBuildFile; fileRef = F493A7D813A3F8F10068C984 /* mongoose.c */; };
-		F493A83213A3F8F10068C984 /* MongooseDaemon.m in Sources */ = {isa = PBXBuildFile; fileRef = F493A7DB13A3F8F10068C984 /* MongooseDaemon.m */; };
 		F493A83313A3F8F10068C984 /* MPOAuthAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F493A7DF13A3F8F10068C984 /* MPOAuthAPI.m */; };
 		F493A83413A3F8F10068C984 /* MPOAuthAPIRequestLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = F493A7E113A3F8F10068C984 /* MPOAuthAPIRequestLoader.m */; };
 		F493A83513A3F8F10068C984 /* MPOAuthAuthenticationMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = F493A7E313A3F8F10068C984 /* MPOAuthAuthenticationMethod.m */; };
@@ -491,10 +489,6 @@
 		F493A7D513A3F8F10068C984 /* MFSQLViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSQLViewer.m; sourceTree = "<group>"; };
 		F493A7D613A3F8F10068C984 /* MFThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFThread.h; sourceTree = "<group>"; };
 		F493A7D713A3F8F10068C984 /* MFThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFThread.m; sourceTree = "<group>"; };
-		F493A7D813A3F8F10068C984 /* mongoose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mongoose.c; sourceTree = "<group>"; };
-		F493A7D913A3F8F10068C984 /* mongoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mongoose.h; sourceTree = "<group>"; };
-		F493A7DA13A3F8F10068C984 /* MongooseDaemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongooseDaemon.h; sourceTree = "<group>"; };
-		F493A7DB13A3F8F10068C984 /* MongooseDaemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongooseDaemon.m; sourceTree = "<group>"; };
 		F493A7DC13A3F8F10068C984 /* MPDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDebug.h; sourceTree = "<group>"; };
 		F493A7DD13A3F8F10068C984 /* MPOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuth.h; sourceTree = "<group>"; };
 		F493A7DE13A3F8F10068C984 /* MPOAuthAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthAPI.h; sourceTree = "<group>"; };
@@ -981,10 +975,6 @@
 				F493A7D613A3F8F10068C984 /* MFThread.h */,
 				F493A7D713A3F8F10068C984 /* MFThread.m */,
 				F42DF63E13B6A151009D06E7 /* webstyles.css */,
-				F493A7D813A3F8F10068C984 /* mongoose.c */,
-				F493A7D913A3F8F10068C984 /* mongoose.h */,
-				F493A7DA13A3F8F10068C984 /* MongooseDaemon.h */,
-				F493A7DB13A3F8F10068C984 /* MongooseDaemon.m */,
 				F493A7DC13A3F8F10068C984 /* MPDebug.h */,
 				F493A7DD13A3F8F10068C984 /* MPOAuth.h */,
 				F493A7DE13A3F8F10068C984 /* MPOAuthAPI.h */,
@@ -1446,8 +1436,6 @@
 				F493A82E13A3F8F10068C984 /* MFSQLTablesController.m in Sources */,
 				F493A82F13A3F8F10068C984 /* MFSQLViewer.m in Sources */,
 				F493A83013A3F8F10068C984 /* MFThread.m in Sources */,
-				F493A83113A3F8F10068C984 /* mongoose.c in Sources */,
-				F493A83213A3F8F10068C984 /* MongooseDaemon.m in Sources */,
 				F493A83313A3F8F10068C984 /* MPOAuthAPI.m in Sources */,
 				F493A83413A3F8F10068C984 /* MPOAuthAPIRequestLoader.m in Sources */,
 				F493A83513A3F8F10068C984 /* MPOAuthAuthenticationMethod.m in Sources */,
