@@ -1,0 +1,131 @@
+<plist>
+ <array>
+  <string>Blues</string>
+  <string>Classic Rock</string>
+  <string>Country</string>
+  <string>Dance</string>
+  <string>Disco</string>
+  <string>Funk</string>
+  <string>Grunge</string>
+  <string>Hip-Hop</string>
+  <string>Jazz</string>
+  <string>Metal</string>
+  <string>New Age</string>
+  <string>Oldies</string>
+  <string>Other</string>
+  <string>Pop</string>
+  <string>R and B</string>
+  <string>Rap</string>
+  <string>Reggae</string>
+  <string>Rock</string>
+  <string>Techno</string>
+  <string>Industrial</string>
+  <string>Alternative</string>
+  <string>Ska</string>
+  <string>Death Metal</string>
+  <string>Pranks</string>
+  <string>Soundtrack</string>
+  <string>Euro-Techno</string>
+  <string>Ambient</string>
+  <string>Trip-Hop</string>
+  <string>Vocal</string>
+  <string>Jazz+Funk</string>
+  <string>Fusion</string>
+  <string>Trance</string>
+  <string>Classical</string>
+  <string>Instrumental</string>
+  <string>Acid</string>
+  <string>House</string>
+  <string>Game</string>
+  <string>Sound Clip</string>
+  <string>Gospel</string>
+  <string>Noise</string>
+  <string>AlternRock</string>
+  <string>Bass</string>
+  <string>Soul</string>
+  <string>Punk</string>
+  <string>Space</string>
+  <string>Meditative</string>
+  <string>Instrumental Pop</string>
+  <string>Instrumental Rock</string>
+  <string>Ethnic</string>
+  <string>Gothic</string>
+  <string>Darkwave</string>
+  <string>Techno-Industrial</string>
+  <string>Electronic</string>
+  <string>Pop-folk</string>
+  <string>Eurodance</string>
+  <string>Dream</string>
+  <string>Southern Rock</string>
+  <string>Comedy</string>
+  <string>Cult</string>
+  <string>Gangsta</string>
+  <string>Top 40</string>
+  <string>Christian Rap</string>
+  <string>Pop/Funk</string>
+  <string>Jungle</string>
+  <string>Native American</string>
+  <string>Cabaret</string>
+  <string>New Wave</string>
+  <string>Psychadelic</string>
+  <string>Rave</string>
+  <string>Showtunes</string>
+  <string>Trailer</string>
+  <string>Lo-Fi</string>
+  <string>Tribal</string>
+  <string>Acid Punk</string>
+  <string>Acid Jazz</string>
+  <string>Polka</string>
+  <string>Retro</string>
+  <string>Musical</string>
+  <string>Rock and Roll</string>
+  <string>Hard rock</string>
+  <!-- begin extended tag numbers -->
+  <string>Folk</string>
+  <string>Folk Rock</string>
+  <string>National Folk</string>
+  <string>Swing</string>
+  <string>Fast Fusion</string>
+  <string>Bebab</string>
+  <string>Latin</string>
+  <string>Revival</string>
+  <string>Celtic</string>
+  <string>Bluegrass</string>
+  <string>Avantgarde</string>
+  <string>Gothic Rock</string>
+  <string>Progressive Rock</string>
+  <string>Psychadelic Rock</string>
+  <string>Symphonic rock</string>
+  <string>Slow rock</string>
+  <string>Big Band</string>
+  <string>Chorus</string>
+  <string>Easy listening</string>
+  <string>Acoustic</string>
+  <string>Humour</string>
+  <string>Speech</string>
+  <string>Chanson</string>
+  <string>Opera</string>
+  <string>Chamber Music</string>
+  <string>Sonata</string>
+  <string>Symphony</string>
+  <string>Booty Bass</string>
+  <string>Primus</string>
+  <string>Porn Groove</string>
+  <string>Satire</string>
+  <string>Slow Jam</string>
+  <string>Club</string>
+  <string>Tango</string>
+  <string>Samba</string>
+  <string>Folklore</string>
+  <string>Ballad</string>
+  <string>Power Ballad</string>
+  <string>Rythmic Soul</string>
+  <string>Freestyle</string>
+  <string>Duet</string>
+  <string>Punk Rock</string>
+  <string>Drum Solo</string>
+  <string>A capella</string>
+  <string>Euro-House</string>
+  <string>Dance Hall</string>
+ </array>
+</plist>

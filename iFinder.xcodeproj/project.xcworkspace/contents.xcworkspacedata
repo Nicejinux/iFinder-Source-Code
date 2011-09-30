@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "self:iFind.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../mobileterminal-read-only/branches/applesdk/MobileTerminal/MobileTerminal.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:iFind.xcodeproj">
+   </FileRef>
+</Workspace>
