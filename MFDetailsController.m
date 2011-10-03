@@ -1046,7 +1046,7 @@
 - (void) fileManagerDBUploadedFile: (NSString *) path {
     seteuid(501);
 	if ([[[NSUserDefaults standardUserDefaults] stringForKey: @"MFDropboxUploadPath"] rangeOfString:@"/Public"].location !=NSNotFound && (!self.file.isDirectory)) {
-        NSURL *bitlyRequestUrl = [NSURL URLWithString: [NSString stringWithFormat: @"http://api.bitly.com/v3/shorten?login=itaybre&apiKey=R_8f979b70d02cd43deeb99bd71de172f9&longUrl=http://dl.dropbox.com/u/%@/%@&format=txt", [[[self mainController] fileManager] userID], [path substringFromIndex: 8]]];
+        NSURL *bitlyRequestUrl = [NSURL URLWithString: [NSString stringWithFormat: @"http://api.bitly.com/v3/shorten?login="USER"&apiKey="APYKEY"&longUrl=http://dl.dropbox.com/u/%@/%@&format=txt", [[[self mainController] fileManager] userID], [path substringFromIndex: 8]]];
         NSString *shortUrlString = [NSString stringWithContentsOfURL: bitlyRequestUrl];
         [[UIPasteboard generalPasteboard] setString: shortUrlString];
         [[[[UIAlertView alloc] initWithTitle: NSLocalizedString(@"File uploaded", @"File uploaded") message: NSLocalizedString(@"Public link was copied to the pasteboard.", @"Public link was copied to the pasteboard.") delegate: nil cancelButtonTitle: NSLocalizedString(@"OK", @"OK") otherButtonTitles: nil] autorelease] show];

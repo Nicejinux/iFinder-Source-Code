@@ -18,7 +18,7 @@
 	self = [super init];
 	
 	fileManager = [[NSFileManager alloc] init];
-	session = [[DBSession alloc] initWithConsumerKey: @"kxq8zb0hnjwf1m6" consumerSecret: @"y4krmbax8ufqvhs"];
+	session = [[DBSession alloc] initWithConsumerKey: DROPBOXCONSUMERKEY consumerSecret: DROPBOXCONSUMERSECRET];
 	[DBSession setSharedSession: session];
 	[session release];
 	restClient = [[DBRestClient alloc] initWithSession: [DBSession sharedSession]];
